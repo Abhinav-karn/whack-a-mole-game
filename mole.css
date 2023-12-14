@@ -1,0 +1,42 @@
+body{
+    font-family: cursive;
+    text-align: center;
+    background: url("mario_bg.jpg");
+    background-size: cover ;
+}
+h1{
+    color: #dbfc1f;
+}
+h2#score{
+    color: rgb(251, 6, 6);
+}
+#board{
+    width: 450px;
+    height: 450px;
+    /* background-color: green; */
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("soil.png");
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 30px;
+}
+#board div{
+    /* board size is 450*450 so for 3*3 tiles we have 150*150 */ 
+    width: 150px;
+    height: 150px;
+    background-image: url("pipe.png");
+    background-size: cover;
+}
+ #board div img{
+    /* all img tags inside the tile */
+    width: 80px;
+    height: 80px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+} 
